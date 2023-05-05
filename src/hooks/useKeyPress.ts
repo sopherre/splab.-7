@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-export const useKeyPress = (targetKey: KeyboardEvent["key"]): boolean => {
+export const useKeyPress = (targetKey: KeyboardEvent["key"]) => {
   const [keyPressed, setKeyPressed] = useState(false);
 
   const downHandler = useCallback(
@@ -31,5 +31,5 @@ export const useKeyPress = (targetKey: KeyboardEvent["key"]): boolean => {
     };
   }, [downHandler, upHandler]);
 
-  return keyPressed;
+  return { keyPressed };
 };
