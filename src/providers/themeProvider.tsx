@@ -6,6 +6,11 @@ import {
 import React from "react";
 
 const theme = createTheme({
+  palette: {
+    neutral: {
+      main: "#505050",
+    },
+  },
   typography: {
     h1: {
       fontSize: "2.5rem",
