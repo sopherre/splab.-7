@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Typography, styled } from "@mui/material";
 import { ContextMenuContainer } from "@/components/contextMenuContainer/contextMenuContainer";
+import { TooltipContainer } from "@/components/tooltipContainer/tooltipContainer";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
         </Typography>
 
         <ContextMenuContainer />
+
+        <TooltipContainer />
       </Main>
     </>
   );
