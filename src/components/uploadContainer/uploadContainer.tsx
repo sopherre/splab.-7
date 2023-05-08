@@ -6,8 +6,14 @@ export const UploadContainer: React.FC = memo(() => {
   return (
     <div>
       <Typography>アップロードのテスト</Typography>
-      <IconButton aria-label="upload picture" component="label">
-        <input hidden accept="image/*" type="file" />
+      <IconButton color="primary" component="label">
+        <input
+          hidden
+          accept="image/*"
+          aria-label="upload file"
+          type="file"
+          multiple
+        />
         <PhotoCamera />
       </IconButton>
     </div>
