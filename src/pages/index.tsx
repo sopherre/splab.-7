@@ -3,6 +3,7 @@ import { Typography, styled } from "@mui/material";
 import { ContextMenuContainer } from "@/components/contextMenuContainer/contextMenuContainer";
 import { TooltipContainer } from "@/components/tooltipContainer/tooltipContainer";
 import { UploadContainer } from "@/components/uploadContainer/uploadContainer";
+import { InputContainer } from "@/components/inputContainer/inputContainer";
 
 export default function Home() {
   return (
@@ -16,12 +17,10 @@ export default function Home() {
         <Typography variant="h1" textAlign="center">
           Testing library のユーザーイベントサンプル集
         </Typography>
-
         <ContextMenuContainer />
-
         <TooltipContainer />
-
         <UploadContainer />
+        <InputContainer />
       </Main>
     </>
   );

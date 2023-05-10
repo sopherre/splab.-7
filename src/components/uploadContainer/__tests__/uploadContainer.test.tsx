@@ -5,7 +5,7 @@ describe("UploadContainerコンポーネントのテスト", () => {
   it("アップロードボタン押下時、ファイルをアップロードできる", async () => {
     render(<UploadContainer />);
     const file = new File(["hello"], "hello.png", { type: "image/png" });
-    const input = screen.getByLabelText<HTMLInputElement>(/upload file/);
+    const input = screen.getByLabelText<HTMLInputElement>(/^upload file$/);
 
     await user.upload(input, file);
 
