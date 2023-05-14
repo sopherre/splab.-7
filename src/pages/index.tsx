@@ -22,7 +22,6 @@ export default function Home() {
         <TooltipContainer />
         <UploadContainer />
         <InputContainer />
-        <DrawerContainer />
       </Main>
     </>
   );
