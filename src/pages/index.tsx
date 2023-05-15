@@ -5,6 +5,7 @@ import { TooltipContainer } from "@/components/tooltipContainer/tooltipContainer
 import { UploadContainer } from "@/components/uploadContainer/uploadContainer";
 import { InputContainer } from "@/components/inputContainer/inputContainer";
 import { EventComparisonContainer } from "@/components/eventComparisonContainer/eventComparisonContainer";
+import { KeyboardContainer } from "@/components/keyboardContainer/keyboardContainer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         </Typography>
         <EventComparisonContainer />
         <ContextMenuContainer />
+        <KeyboardContainer />
         <TooltipContainer />
         <UploadContainer />
         <InputContainer />
