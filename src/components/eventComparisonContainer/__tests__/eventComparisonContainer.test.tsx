@@ -7,6 +7,7 @@ describe("EventComparisonContainerコンポーネントのテスト", () => {
 
     const input = screen.getByRole("textbox");
     fireEvent.change(input, { target: { value: "hoge" } });
+    expect(input).toHaveValue("hoge");
 
     const text = screen.getByText("キー押下しています");
     expect(text).toBeInTheDocument();
@@ -17,9 +18,9 @@ describe("EventComparisonContainerコンポーネントのテスト", () => {
     const input = screen.getByRole("textbox");
 
     await user.type(input, "hoge");
+    expect(input).toHaveValue("hoge");
 
     const text = screen.getByText("キー押下しています");
     expect(text).toBeInTheDocument();
-    expect(input).toHaveValue("hoge");
   });
 });
