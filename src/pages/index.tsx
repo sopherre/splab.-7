@@ -4,7 +4,7 @@ import { ContextMenuContainer } from "@/components/contextMenuContainer/contextM
 import { TooltipContainer } from "@/components/tooltipContainer/tooltipContainer";
 import { UploadContainer } from "@/components/uploadContainer/uploadContainer";
 import { InputContainer } from "@/components/inputContainer/inputContainer";
-import { DrawerContainer } from "@/components/drawerContainer/drawerContainer";
+import { EventComparisonContainer } from "@/components/eventComparisonContainer/eventComparisonContainer";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
         <Typography variant="h1" textAlign="center">
           Testing library のユーザーイベントサンプル集
         </Typography>
+        <EventComparisonContainer />
         <ContextMenuContainer />
         <TooltipContainer />
         <UploadContainer />
