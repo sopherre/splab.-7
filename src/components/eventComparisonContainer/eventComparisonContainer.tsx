@@ -4,7 +4,7 @@ import { memo, useCallback, useEffect, useState } from "react";
 export const EventComparisonContainer: React.FC = memo(() => {
   const [isKeyPress, setIsKeyPress] = useState(false);
 
-  const handleKeydown = useCallback((e: KeyboardEvent) => {
+  const handleKeydown = useCallback(() => {
     setIsKeyPress(true);
   }, []);
 
