@@ -2,14 +2,14 @@ import { Typography } from "@mui/material";
 import { memo, useCallback, useEffect, useState } from "react";
 
 export const KeyboardContainer: React.FC = memo(() => {
-  const [isKeydown, setIsKeydown] = useState(false);
+  const [isKeyPressed, setIsKeyPressed] = useState(false);
 
   const handleKeydown = useCallback(() => {
-    setIsKeydown(true);
+    setIsKeyPressed(true);
   }, []);
 
   const handleKeyup = useCallback(() => {
-    setIsKeydown(false);
+    setIsKeyPressed(false);
   }, []);
 
   useEffect(() => {
@@ -19,9 +19,9 @@ export const KeyboardContainer: React.FC = memo(() => {
 
   return (
     <div>
-      <Typography>キーボードのテスト</Typography>
+      <Typography variant="h2">キーボードのテスト</Typography>
       <Typography>
-        {isKeydown ? "キー押下しています" : "キー押下していません"}
+        {isKeyPressed ? "キー押下しています" : "キー押下していません"}
       </Typography>
     </div>
   );

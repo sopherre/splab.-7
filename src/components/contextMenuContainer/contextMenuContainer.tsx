@@ -23,7 +23,7 @@ export const ContextMenuContainer: React.FC = memo(() => {
   return (
     <>
       <div>
-        <Typography>コンテキストメニューのテスト</Typography>
+        <Typography variant="h2">コンテキストメニューのテスト</Typography>
         <Wrapper onContextMenu={handleContextMenu}>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam

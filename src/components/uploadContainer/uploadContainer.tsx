@@ -5,7 +5,7 @@ import PhotoCamera from "@mui/icons-material/PhotoCamera";
 export const UploadContainer: React.FC = memo(() => {
   return (
     <div>
-      <Typography>アップロードのテスト</Typography>
+      <Typography variant="h2">アップロードのテスト</Typography>
       <IconButton color="primary" component="label">
         <input
           hidden

@@ -5,7 +5,7 @@ import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 export const TooltipContainer: React.FC = memo(() => {
   return (
     <div>
-      <Typography>ツールチップのテスト</Typography>
+      <Typography variant="h2">ツールチップのテスト</Typography>
       <Tooltip title="ツールチップ">
         <IconButton>
           <AccessibilityNewIcon />

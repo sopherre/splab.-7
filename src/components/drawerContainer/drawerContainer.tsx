@@ -37,7 +37,7 @@ export const DrawerContainer: React.FC = memo(() => {
   return (
     <>
       <div>
-        <Typography>ドロワーのテスト</Typography>
+        <Typography variant="h2">ドロワーのテスト</Typography>
         <Button variant="contained" onClick={openDrawer}>
           開く
         </Button>

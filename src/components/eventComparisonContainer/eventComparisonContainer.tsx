@@ -14,7 +14,7 @@ export const EventComparisonContainer: React.FC = memo(() => {
 
   return (
     <div>
-      <Typography>fireEventとuserEventの比較</Typography>
+      <Typography variant="h2">fireEventとuserEventの比較</Typography>
       <Typography>
         {isKeyPressed ? "キー押下しています" : "キー押下していません"}
       </Typography>
