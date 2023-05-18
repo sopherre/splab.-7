@@ -15,13 +15,16 @@ describe("InputContainerコンポーネントのテスト", () => {
     render(<InputContainer />);
     const spinbutton = screen.getByRole("spinbutton");
     await user.type(spinbutton, "123");
-    await user.dblClick(spinbutton);
+    await user.pointer([
+      { target: spinbutton, offset: 1, keys: "[MouseLeft>]" },
+      { offset: 3 },
+    ]);
     await user.copy();
     const textbox = screen.getByRole<HTMLInputElement>("textbox");
     await user.click(textbox);
 
     await user.paste();
 
-    expect(textbox).toHaveValue("123");
+    expect(textbox).toHaveValue("23");
   });
 });
